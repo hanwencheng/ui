@@ -41,8 +41,8 @@ export function createSignPayload (address: string, cmd: number, payload: string
     new Uint8Array([cmd]),
     decodeAddress(address),
     u8aToU8a(payload),
-    u8aToU8a(genesisHash),
-    u8aToU8a(specVersionString)
+    u8aToU8a(specVersionString),
+    u8aToU8a(genesisHash)
   );
 }
 
